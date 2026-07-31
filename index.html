@@ -53,7 +53,7 @@ function startMusic(){
 }
 document.addEventListener('click',startMusic,{once:true});
 
-const msg=`💕💕Meri Pyariii Kuchupuchuuu ke liyeeee💕💕,\n\nDistance se chahe hum jitna bhi durr ho par hamesha ek dusre ke dil ke bohot pass rahenge💕💕, ek dusre se bohot pyar karte hai aur aage bhi bohot pyar karte rahenge💕💕\n\nHappy Girlfriend's Day to Meri Tanuuu ❤️❤️\n\n💞💞Main tainu bhot pyaar karda haan, kall vi karanga, te hamesha hi bhot sara pyar karda ravanga💞💞, I love you so much Meri Pyariii Tanuuu💕💕.`;
+const msg=`💕💕Meri Pyariii Kuchupuchuuu ke liyeeee💕💕,\n\nBhot lucky hu ki tum mujhse pyar karti ho aur hum relation mein hai💕💕, hum aage bhi ek dusre se bohot pyar karte rahenge💕💕\n\nHappy Girlfriend's Day to Meri Tanuuu ❤️❤️\n\n💞💞Main tainu bhot pyaar karda haan, kall vi karanga, te hamesha hi bhot sara pyar karda ravanga💞💞, I love you so much Meri Pyariii Tanuuu💕💕.`;
 let i=0;function t(){if(i<msg.length){type.innerHTML+=msg[i]=="\n"?"<br>":msg[i];i++;setTimeout(t,35)}};t();
 const obs=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('show',e.isIntersecting)));document.querySelectorAll('.fade').forEach(x=>obs.observe(x));
 function heart(){let h=document.createElement('div');h.className='heart';h.textContent='💖';h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*24)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),7000)}
