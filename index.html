@@ -53,7 +53,7 @@ function startMusic(){
 }
 document.addEventListener('click',startMusic,{once:true});
 
-const msg=`💕💕Meri Pyariii Kuchupuchuuu ke liyeeee💕💕,\n\nBhot lucky hu ki tum mujhse pyar karti ho aur hum relation mein hai💕💕, hum aage bhi ek dusre se bohot pyar karte rahenge💕💕\n\nHappy Girlfriend's Day to Meri Tanuuu ❤️❤️\n\n💞💞Main tainu bhot pyaar karda haan, kall vi karanga, te hamesha hi bhot sara pyar karda ravanga💞💞, I love you so much Meri Pyariii Tanuuu💕💕.`;
+const msg=`💕💕Meri Pyariii Kuchupuchuuu ke liyeeee💕💕,\n\n💕💕 Bhot lucky hu ki tum mujhse pyar karti ho aur hum relation mein hai, hum aage bhi ek dusre se bohot pyar karte rahenge💕💕\n\nHappy Girlfriend's Day to Meri Tanuuu ❤️❤️\n\n💞💞Main tainu bhot pyaar karda haan, kall vi karanga, te hamesha hi bhot sara pyar karda ravanga💞💞, I love you so much Meri Pyariii Tanuuu💕💕.`;
 let i=0;function t(){if(i<msg.length){type.innerHTML+=msg[i]=="\n"?"<br>":msg[i];i++;setTimeout(t,35)}};t();
 const obs=new IntersectionObserver(es=>es.forEach(e=>e.target.classList.toggle('show',e.isIntersecting)));document.querySelectorAll('.fade').forEach(x=>obs.observe(x));
 function heart(){let h=document.createElement('div');h.className='heart';h.textContent='💖';h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*24)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),7000)}
@@ -70,6 +70,6 @@ let current=0,typing=false;
 function tw(el,t,s,cb){let i=0;function f(){if(i<t.length){el.innerHTML+=t.charAt(i++);setTimeout(f,s)}else{typing=false;cb&&cb();}}f();}
 nextBtn.onclick=()=>{if(typing||current>=loveMessages.length)return;typing=true;nextBtn.disabled=true;let li=document.createElement('li');loveList.appendChild(li);tw(li,loveMessages[current],25,()=>{if(current===loveMessages.length-1){li.classList.add('signature');}current++;nextBtn.disabled=false;if(current===loveMessages.length){nextBtn.style.display='none';surprise.style.display='inline-block';}});};
 
-surprise.onclick=()=>{for(let j=0;j<80;j++)setTimeout(heart,j*25);surprise.outerHTML="<div class='card show'><h2>🌷🌷🌷 Ek aurr baat sunloooo😘😘😘</h2><p>Chahe hum dono ke life mein kuch bhi hojaye, kitna bhi kalesh karle, main tab bhi tumse hi pyar karunga aur tumhari daant bhi sununga, par kabhi bhi tumpe gussa nhi karunga aur tumhe bohot pyar se handle karunga ❤️</p><h1>I Love You meri pyariii tanuuu💕💕</h1></div>";}
+surprise.onclick=()=>{for(let j=0;j<80;j++)setTimeout(heart,j*25);surprise.outerHTML="<div class='card show'><h2>🌷🌷🌷 Ek aurrr baat sunloooo😘😘😘</h2><p>Chahe hum dono ke life mein kuch bhi hojaye, kitna bhi kalesh karle, main tab bhi tumse hi pyar karunga aur tumhari daant bhi sununga, par kabhi bhi tumpe gussa nhi karunga aur tumhe bohot pyar se handle karunga ❤️</p><h1>I Love You meri pyariii tanuuu💕💕</h1></div>";}
 </script>
 </body></html>
