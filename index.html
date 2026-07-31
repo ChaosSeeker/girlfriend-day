@@ -26,7 +26,7 @@ animation:glow 2s ease-in-out infinite alternate;
 <body>
 <audio id='bgMusic' loop><source src='high-on-you.mp3' type='audio/mpeg'></audio>
 <section class='hero'>
-<h1>❤️Happy Girlfriend's Day Meri Pyari Tanuuu❤️</h1>
+<h1>❤️🌷Happy Girlfriend's Day Meri Pyari Tanuuu🌷❤️</h1>
  <img
     src="your-image.png"
     alt="Our Love"
@@ -70,6 +70,6 @@ let current=0,typing=false;
 function tw(el,t,s,cb){let i=0;function f(){if(i<t.length){el.innerHTML+=t.charAt(i++);setTimeout(f,s)}else{typing=false;cb&&cb();}}f();}
 nextBtn.onclick=()=>{if(typing||current>=loveMessages.length)return;typing=true;nextBtn.disabled=true;let li=document.createElement('li');loveList.appendChild(li);tw(li,loveMessages[current],25,()=>{if(current===loveMessages.length-1){li.classList.add('signature');}current++;nextBtn.disabled=false;if(current===loveMessages.length){nextBtn.style.display='none';surprise.style.display='inline-block';}});};
 
-surprise.onclick=()=>{for(let j=0;j<80;j++)setTimeout(heart,j*25);surprise.outerHTML="<div class='card show'><h2>🌹 Ek aurr baat sunloooo😘...</h2><p>Chahe hum dono ke life mein kuch bhi hojaye, kitna bhi kalesh karle, main tab bhi tumse hi pyar karunga aur tumhari daant bhi sununga, par kabhi bhi tumpe gussa nhi karunga aur tumhe bohot pyar se handle karunga ❤️</p><h1>I Love You meri pyariii tanuuu💕💕</h1></div>";}
+surprise.onclick=()=>{for(let j=0;j<80;j++)setTimeout(heart,j*25);surprise.outerHTML="<div class='card show'><h2>🌷🌷🌷 Ek aurr baat sunloooo😘😘😘</h2><p>Chahe hum dono ke life mein kuch bhi hojaye, kitna bhi kalesh karle, main tab bhi tumse hi pyar karunga aur tumhari daant bhi sununga, par kabhi bhi tumpe gussa nhi karunga aur tumhe bohot pyar se handle karunga ❤️</p><h1>I Love You meri pyariii tanuuu💕💕</h1></div>";}
 </script>
 </body></html>
